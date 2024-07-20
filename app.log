@@ -1,0 +1,109 @@
+2024-06-18 01:29:05,842 - root - INFO - Connection created
+2024-06-18 01:29:06,270 - root - ERROR - Failed to access view luis_981908_coderhouse.covid_data_analist: (psycopg2.errors.UndefinedTable) relation "covid_data_analist" does not exist
+
+[SQL: SELECT * FROM covid_data_analist]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2024-06-18 01:29:06,270 - root - INFO - Connection to Redshift closed.
+2024-06-18 01:29:58,268 - root - INFO - Connection created
+2024-06-18 01:29:58,698 - root - ERROR - Failed to access view luis_981908_coderhouse.covid_data_analist: (psycopg2.errors.UndefinedTable) relation "covid_data_analist" does not exist
+
+[SQL: SELECT * FROM covid_data_analist]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2024-06-18 01:29:58,706 - root - INFO - Connection to Redshift closed.
+2024-06-18 01:30:50,905 - root - INFO - Connection created
+2024-06-18 01:30:55,933 - root - INFO - Connection to Redshift closed.
+2024-06-18 23:48:58,481 - root - INFO - Connection created
+2024-06-18 23:49:02,049 - root - WARNING - Check the data format
+2024-06-18 23:53:47,131 - root - ERROR - Failed to upload data to luis_981908_coderhouse.stage_covid_data: (psycopg2.errors.StringDataRightTruncation) value too long for type character varying(50)
+
+[SQL: INSERT INTO luis_981908_coderhouse.stage_covid_data ("FIPS", "Admin2", "Province_State", "Country_Region", "Last_Update", "Lat", "Long_", "Confirmed", "Deaths", "Recovered", "Active", "Combined_Key", "Incident_Rate", "Case_Fatality_Ratio") VALUES (%(FIPS)s, %(Admin2)s, %(Province_State)s, %(Country_Region)s, %(Last_Update)s, %(Lat)s, %(Long_)s, %(Confirmed)s, %(Deaths)s, %(Recovered)s, %(Active)s, %(Combined_Key)s, %(Incident_Rate)s, %(Case_Fatality_Ratio)s)]
+[parameters: ({'FIPS': '', 'Admin2': '', 'Province_State': '', 'Country_Region': 'Afghanistan', 'Last_Update': '2023-03-10 04:21:03', 'Lat': '33.93911', 'Long_': '67.709953', 'Confirmed': '209451', 'Deaths': '7896', 'Recovered': '', 'Active': '', 'Combined_Key': 'Afghanistan', 'Incident_Rate': '538.0424508714615', 'Case_Fatality_Ratio': '3.76985547932452'}, {'FIPS': '', 'Admin2': '', 'Province_State': '', 'Country_Region': 'Albania', 'Last_Update': '2023-03-10 04:21:03', 'Lat': '41.1533', 'Long_': '20.1683', 'Confirmed': '334457', 'Deaths': '3598', 'Recovered': '', 'Active': '', 'Combined_Key': 'Albania', 'Incident_Rate': '11621.96817012996', 'Case_Fatality_Ratio': '1.075773567304616'}, {'FIPS': '', 'Admin2': '', 'Province_State': '', 'Country_Region': 'Algeria', 'Last_Update': '2023-03-10 04:21:03', 'Lat': '28.0339', 'Long_': '1.6596', 'Confirmed': '271496', 'Deaths': '6881', 'Recovered': '', 'Active': '', 'Combined_Key': 'Algeria', 'Incident_Rate': '619.132365905185', 'Case_Fatality_Ratio': '2.534475646050034'}, {'FIPS': '', 'Admin2': '', 'Province_State': '', 'Country_Region': 'Andorra', 'Last_Update': '2023-03-10 04:21:03', 'Lat': '42.5063', 'Long_': '1.5218', 'Confirmed': '47890', 'Deaths': '165', 'Recovered': '', 'Active': '', 'Combined_Key': 'Andorra', 'Incident_Rate': '61981.49226687375', 'Case_Fatality_Ratio': '0.34453956984756734'}, {'FIPS': '', 'Admin2': '', 'Province_State': '', 'Country_Region': 'Angola', 'Last_Update': '2023-03-10 04:21:03', 'Lat': '-11.2027', 'Long_': '17.8739', 'Confirmed': '105288', 'Deaths': '1933', 'Recovered': '', 'Active': '', 'Combined_Key': 'Angola', 'Incident_Rate': '320.35277020195906', 'Case_Fatality_Ratio': '1.835916723653218'}, {'FIPS': '', 'Admin2': '', 'Province_State': '', 'Country_Region': 'Antarctica', 'Last_Update': '2023-03-10 04:21:03', 'Lat': '-71.9499', 'Long_': '23.347', 'Confirmed': '11', 'Deaths': '0', 'Recovered': '', 'Active': '', 'Combined_Key': 'Antarctica', 'Incident_Rate': '', 'Case_Fatality_Ratio': '0.0'}, {'FIPS': '', 'Admin2': '', 'Province_State': '', 'Country_Region': 'Antigua and Barbuda', 'Last_Update': '2023-03-10 04:21:03', 'Lat': '17.0608', 'Long_': '-61.7964', 'Confirmed': '9106', 'Deaths': '146', 'Recovered': '', 'Active': '', 'Combined_Key': 'Antigua and Barbuda', 'Incident_Rate': '9298.668409443671', 'Case_Fatality_Ratio': '1.6033384581594552'}, {'FIPS': '', 'Admin2': '', 'Province_State': '', 'Country_Region': 'Argentina', 'Last_Update': '2023-03-10 04:21:03', 'Lat': '-38.4161', 'Long_': '-63.6167', 'Confirmed': '10044957', 'Deaths': '130472', 'Recovered': '', 'Active': '', 'Combined_Key': 'Argentina', 'Incident_Rate': '22225.43269916568', 'Case_Fatality_Ratio': '1.2988806223859395'}  ... displaying 10 of 4016 total bound parameter sets ...  {'FIPS': '', 'Admin2': '', 'Province_State': '', 'Country_Region': 'Zambia', 'Last_Update': '2023-03-10 04:21:03', 'Lat': '-13.133897', 'Long_': '27.849332', 'Confirmed': '343135', 'Deaths': '4057', 'Recovered': '', 'Active': '', 'Combined_Key': 'Zambia', 'Incident_Rate': '1866.491629984319', 'Case_Fatality_Ratio': '1.1823334839057513'}, {'FIPS': '', 'Admin2': '', 'Province_State': '', 'Country_Region': 'Zimbabwe', 'Last_Update': '2023-03-10 04:21:03', 'Lat': '-19.015438', 'Long_': '29.154857', 'Confirmed': '264276', 'Deaths': '5671', 'Recovered': '', 'Active': '', 'Combined_Key': 'Zimbabwe', 'Incident_Rate': '1778.0885285919792', 'Case_Fatality_Ratio': '2.1458626587355645'})]
+(Background on this error at: https://sqlalche.me/e/14/9h9h)
+2024-06-18 23:53:47,147 - root - INFO - Connection to Redshift closed.
+2024-06-18 23:56:11,221 - root - INFO - Connection created
+2024-06-18 23:56:16,333 - root - WARNING - Check the data format
+2024-06-19 00:02:55,220 - root - INFO - Data from the DataFrame has been uploaded to the luis_981908_coderhouse.stage_covid_data table in Redshift.
+2024-06-19 00:02:55,235 - root - ERROR - Failed to upload data to luis_981908_coderhouse.stage_covid_data: (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT * FROM covid_data_analist]
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+2024-06-19 00:02:55,235 - root - INFO - Connection to Redshift closed.
+2024-06-19 00:20:37,772 - root - INFO - Connection created
+2024-06-19 00:20:38,814 - root - INFO - Connection to Redshift closed.
+2024-06-19 00:21:36,484 - root - INFO - Connection created
+2024-06-19 00:21:40,480 - root - WARNING - Check the data format
+2024-06-19 00:28:18,659 - root - INFO - Data from the DataFrame has been uploaded to the luis_981908_coderhouse.stage_covid_data table in Redshift.
+2024-06-19 00:28:18,829 - root - ERROR - Failed to upload data to luis_981908_coderhouse.stage_covid_data: (psycopg2.errors.UndefinedTable) relation "covid_data_analist" does not exist
+
+[SQL: SELECT * FROM covid_data_analist]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2024-06-19 00:28:18,829 - root - INFO - Connection to Redshift closed.
+2024-06-19 00:44:39,531 - root - INFO - Connection created
+2024-06-19 00:44:43,692 - root - WARNING - Check the data format
+2024-06-19 00:51:12,481 - root - INFO - Data from the DataFrame has been uploaded to the luis_981908_coderhouse.stage_covid_data table in Redshift.
+2024-06-19 00:51:14,450 - root - INFO - Connection to Redshift closed.
+2024-06-19 01:10:51,582 - root - INFO - Connection created
+2024-06-19 01:10:52,849 - root - INFO - Connection to Redshift closed.
+2024-06-19 01:12:04,811 - root - INFO - Connection created
+2024-06-19 01:12:05,818 - root - INFO - Connection to Redshift closed.
+2024-06-19 01:12:51,638 - root - INFO - Connection created
+2024-06-19 01:13:03,434 - root - WARNING - Check the data format
+2024-06-19 01:19:28,887 - root - INFO - Data from the DataFrame has been uploaded to the luis_981908_coderhouse.stage_covid_data table in Redshift.
+2024-06-19 01:19:30,655 - root - INFO - Connection to Redshift closed.
+2024-06-30 14:10:02,726 - root - WARNING - Check the data format
+2024-06-30 14:10:02,726 - root - WARNING - Execute it before
+2024-06-30 14:10:02,726 - root - ERROR - Failed to upload data to luis_981908_coderhouse.stage_covid_data: invalid literal for int() with base 10: ''
+2024-06-30 14:10:02,726 - root - WARNING - No active connection to close.
+2024-06-30 14:12:13,947 - root - WARNING - Check the data format
+2024-06-30 14:12:13,947 - root - WARNING - Execute it before
+2024-06-30 14:12:13,947 - root - ERROR - Failed to upload data to luis_981908_coderhouse.stage_covid_data: invalid literal for int() with base 10: ''
+2024-06-30 14:12:13,947 - root - WARNING - No active connection to close.
+2024-06-30 14:13:42,281 - root - WARNING - Check the data format
+2024-06-30 14:13:42,281 - root - WARNING - Execute it before
+2024-06-30 14:13:43,873 - root - INFO - Connection created
+2024-06-30 14:21:30,393 - root - INFO - Data from the DataFrame has been uploaded to the luis_981908_coderhouse.stage_covid_data table in Redshift.
+2024-06-30 14:21:30,393 - root - INFO - Connection to Redshift closed.
+2024-06-30 14:48:28,823 - root - ERROR - Failed to excecute sql command: 'DataConn' object has no attribute 'execute'
+2024-06-30 14:49:02,156 - root - ERROR - Failed to excecute sql command: 'NoneType' object has no attribute 'execute'
+2024-06-30 14:54:49,585 - root - WARNING - Execute it before
+2024-06-30 14:54:50,917 - root - INFO - Connection created
+2024-06-30 14:54:50,918 - root - ERROR - Failed to excecute sql command: 'DataConn' object has no attribute 'execute'
+2024-06-30 14:56:05,480 - root - WARNING - Execute it before
+2024-06-30 14:56:06,796 - root - INFO - Connection created
+2024-06-30 14:56:07,169 - root - ERROR - Failed to excecute sql command: (psycopg2.errors.UndefinedTable) relation "stage_covid_data" does not exist
+
+[SQL: 
+
+-- Se crea la vista con masking en el campo deaths
+CREATE OR REPLACE VIEW covid_data_analist AS
+(
+	SELECT sc.province_state, 
+	       sc.country_region, 
+	       sc.last_update, 
+	       sc.lat, sc.long_ AS long, 
+	       sc.confirmed, 
+	       regexp_replace(sc.deaths::text, '[[:digit:]]'::text, '*'::text) AS deaths, 
+	       sc.recovered, 
+	       sc.active, 
+	       sc.incident_rate, 
+	       sc.case_fatality_ratio
+   FROM stage_covid_data sc
+)]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2024-06-30 14:57:56,803 - root - WARNING - Execute it before
+2024-06-30 14:57:58,131 - root - INFO - Connection created
+2024-06-30 14:57:58,476 - root - ERROR - Failed to excecute sql command: (psycopg2.ProgrammingError) can't execute an empty query
+[SQL: 
+]
+(Background on this error at: https://sqlalche.me/e/14/f405)
+2024-06-30 15:04:24,550 - root - WARNING - Execute it before
+2024-06-30 15:04:25,846 - root - INFO - Connection created
+2024-06-30 15:04:26,035 - root - INFO - Connection to Redshift closed.
+2024-06-30 15:04:32,214 - root - WARNING - Check the data format
+2024-06-30 15:12:24,206 - root - INFO - Data from the DataFrame has been uploaded to the luis_981908_coderhouse.stage_covid_data table in Redshift.
+2024-06-30 15:12:24,206 - root - INFO - Connection to Redshift closed.
